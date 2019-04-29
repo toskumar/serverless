@@ -1,0 +1,62 @@
+[
+	{
+		"cid": {"S":"vaniyar"},
+		"uid": {"S":"arundati@gmail.com"},
+		"createdOn": "2019-01-01",
+		"createdBy": "test-admin",
+		"person": {
+			"name": "Anand Shekhar",
+			"dob": "1977-12-10",
+			"age": "41",
+			"gender": "M",
+			"maritalStatus": "U",
+			"email": "anand@gmail.com",
+			"mobile": "9900000001"
+		},
+		"preference": {
+			"minAge": 30,
+			"maxAge": 41,
+			"matchHoroscope": true
+		}
+	},
+	{
+		"cid": {"S":"vaniyar"},
+		"uid": {"S":"banumathi@gmail.com"},
+		"createdOn": "2019-01-02",
+		"createdBy": "test-admin",
+		"person": {
+			"name": "Babu",
+			"dob": "1981-06-30",
+			"age": "38",
+			"gender": "M",
+			"maritalStatus": "W",
+			"email": "babu@gmail.com",
+			"mobile": "9900000002"
+		},
+		"preference": {
+			"minAge": 28,
+			"maxAge": 38,
+			"matchHoroscope": false
+		}
+	},
+	{
+		"cid": {"S":"vaniyar"},
+		"uid": {"S":"chitra@gmail.com"},
+		"createdOn": "2019-01-03",
+		"createdBy": "test-admin",
+		"person": {
+			"name": "Chinna",
+			"dob": "1991-06-30",
+			"age": "28",
+			"gender": "M",
+			"maritalStatus": "D",
+			"email": "chinna@gmail.com",
+			"mobile": "9900000003"
+		},
+		"preference": {
+			"minAge": 18,
+			"maxAge": 28,
+			"matchHoroscope": false
+		}
+	}	
+]

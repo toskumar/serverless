@@ -1,0 +1,34 @@
+{
+	"User": [
+		{
+			"PutRequest": {
+				"Item": {
+					"id": {"S":"anand@gmail.com"},
+					"secret": {"S":"anand@gmail.com"},
+					"sso": {"S":"site"},
+					"lastVisit": {"S":"2019-01-01T00:00:00.000Z"}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"id": {"S":"babu@gmail.com"},
+					"secret": {"S":"babu@gmail.com"},
+					"sso": {"S":"site"},
+					"lastVisit": {"S":"2019-01-01T00:00:00.000Z"}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"id": {"S":"chinna@gmail.com"},
+					"secret": {"S":"chinna@gmail.com"},
+					"sso": {"S":"site"},
+					"lastVisit": {"S":"2019-01-01T00:00:00.000Z"}
+				}
+			}
+		}				
+	]
+}

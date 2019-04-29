@@ -1,0 +1,91 @@
+{
+	"Profile": [
+		{
+			"PutRequest": {
+				"Item": {
+					"cid": {"S":"vaniyar"},
+					"uid": {"S":"anand@gmail.com"},
+					"createdOn": {"S":"2019-01-01T00:00:00.000Z"},
+					"createdBy": {"S":"test-admin"},
+					"person": { 
+						"M" : {
+							"shortName": {"S":"Anand"},
+							"fullName": {"S":"Anand Rajashekhar"},
+							"dob": {"S":"1977-12-10T00:00:00.000Z"},
+							"age": {"N":"41"},
+							"gender": {"S":"M"},
+							"maritalStatus": {"S":"U"},
+							"email": {"S":"anand@gmail.com"},
+							"mobile": {"S":"9900000001"}
+						}
+					},
+					"preference": { 
+						"M" : {
+							"minAge": {"N":"30"},
+							"maxAge": {"N":"41"},
+							"matchHoroscope": {"BOOL":true}
+						}
+					}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"cid": {"S":"vaniyar"},
+					"uid": {"S":"babu@gmail.com"},
+					"createdOn": {"S":"2019-01-02T00:00:00.000Z"},
+					"createdBy": {"S":"test-admin"},
+					"person": {
+						"M" : {
+							"shortName": {"S":"Babu"},
+							"fullName": {"S":"Babu Venkatesan"},
+							"dob": {"S":"1981-06-30T00:00:00.000Z"},
+							"age": {"N":"38"},
+							"gender": {"S":"M"},
+							"maritalStatus": {"S":"W"},
+							"email": {"S":"babu@gmail.com"},
+							"mobile": {"S":"9900000002"}
+						}
+					},
+					"preference": {
+						"M" : {
+							"minAge": {"N":"28"},
+							"maxAge": {"N":"38"},
+							"matchHoroscope": {"BOOL":false}
+						}
+					}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"cid": {"S":"vaniyar"},
+					"uid": {"S":"chinna@gmail.com"},
+					"createdOn": {"S":"2019-01-03T00:00:00.000Z"},
+					"createdBy": {"S":"test-admin"},
+					"person": {
+						"M" : {
+							"shortName": {"S":"Chinna"},
+							"fullName": {"S":"Chinnaswamy C"},
+							"dob": {"S":"1995-12-10T00:00:00.000Z"},
+							"age": {"N":"24"},
+							"gender": {"S":"M"},
+							"maritalStatus": {"S":"U"},
+							"email": {"S":"chinna@gmail.com"},
+							"mobile": {"S":"9900000003"}
+						}	
+					},
+					"preference": {
+						"M" : {
+							"minAge": {"N":"18"},
+							"maxAge": {"N":"20"},
+							"matchHoroscope": {"BOOL":true}
+						}
+					}
+				}
+			}
+		}
+	]
+}

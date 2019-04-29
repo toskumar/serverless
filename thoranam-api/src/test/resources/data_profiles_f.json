@@ -1,0 +1,91 @@
+{
+	"Profile": [
+		{
+			"PutRequest": {
+				"Item": {
+					"cid": {"S":"vaniyar"},
+					"uid": {"S":"arundati@gmail.com"},
+					"createdOn": {"S":"2019-01-01T00:00:00.000Z"},
+					"createdBy": {"S":"test-admin"},
+					"person": {
+						"M" : {					
+							"shortName": {"S":"Arundathi"},
+							"fullName": {"S":"Arundathi A"},
+							"dob": {"S":"1990-01-01T00:00:00.000Z"},
+							"age": {"N":"29"},
+							"gender": {"S":"F"},
+							"maritalStatus": {"S":"U"},
+							"email": {"S":"arundati@gmail.com"},
+							"mobile": {"S":"9900000011"}
+						}
+					},
+					"preference": {
+						"M" : {					
+							"minAge": {"N":"20"},
+							"maxAge": {"N":"25"},
+							"matchHoroscope": {"BOOL":true}
+						}
+					}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"cid": {"S":"vaniyar"},
+					"uid": {"S":"banumathi@gmail.com"},
+					"createdOn": {"S":"2019-01-02T00:00:00.000Z"},
+					"createdBy": {"S":"test-admin"},
+					"person": {
+						"M" : {					
+							"shortName": {"S":"Banu"},
+							"fullName": {"S":"Banumathi B"},
+							"dob": {"S":"1995-06-30T00:00:00.000Z"},
+							"age": {"N":"24"},
+							"gender": {"S":"F"},
+							"maritalStatus": {"S":"U"},
+							"email": {"S":"banu@gmail.com"},
+							"mobile": {"S":"9900000012"}
+						}
+					},
+					"preference": {
+						"M" : {					
+							"minAge": {"N":"24"},
+							"maxAge": {"N":"29"},
+							"matchHoroscope": {"BOOL":false}
+						}
+					}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"cid": {"S":"vaniyar"},
+					"uid": {"S":"chitra@gmail.com"},
+					"createdOn": {"S":"2019-01-03T00:00:00.000Z"},
+					"createdBy": {"S":"test-admin"},
+					"person": {
+						"M" : {					
+							"shortName": {"S":"Chitra"},
+							"fullName": {"S":"Chitra C"},
+							"dob": {"S":"1977-12-10T00:00:00.000Z"},
+							"age": {"N":"41"},
+							"gender": {"S":"F"},
+							"maritalStatus": {"S":"U"},
+							"email": {"S":"anand@gmail.com"},
+							"mobile": {"S":"9900000001"}
+						}
+					},
+					"preference": {
+						"M" : {					
+							"minAge": {"N":"30"},
+							"maxAge": {"N":"41"},
+							"matchHoroscope": {"BOOL":true}
+						}
+					}
+				}
+			}
+		}
+	]
+}

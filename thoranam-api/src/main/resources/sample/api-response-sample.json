@@ -1,0 +1,131 @@
+{
+    "message": {
+        "id": "toskumar",
+        "version": 1,
+        "name": "SenthilKumar",
+        "createdOn": 1556781388792,
+        "createdBy": "api_admin"
+    },
+    "input": {
+        "resource": "/api/{path}",
+        "path": "/api/profiles",
+        "httpMethod": "POST",
+        "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "cache-control": "no-cache",
+            "CloudFront-Forwarded-Proto": "https",
+            "CloudFront-Is-Desktop-Viewer": "true",
+            "CloudFront-Is-Mobile-Viewer": "false",
+            "CloudFront-Is-SmartTV-Viewer": "false",
+            "CloudFront-Is-Tablet-Viewer": "false",
+            "CloudFront-Viewer-Country": "IN",
+            "Content-Type": "text/plain",
+            "Host": "rd0a79ans4.execute-api.ap-south-1.amazonaws.com",
+            "Postman-Token": "afbf7c95-b841-4df2-9010-272184295224",
+            "User-Agent": "PostmanRuntime/7.6.0",
+            "Via": "1.1 768fe349e14518bfffafb530144094da.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Id": "ymLffIwl-EhzzF-bZH1deE1gZiMemh1_U2mL65n0WbMDc0WvxMYM8Q==",
+            "X-Amzn-Trace-Id": "Root=1-5cca994c-e09b5d1c7144e5986b662f4d",
+            "X-Forwarded-For": "144.36.235.110, 52.46.49.170",
+            "X-Forwarded-Port": "443",
+            "X-Forwarded-Proto": "https"
+        },
+        "multiValueHeaders": {
+            "Accept": [
+                "*/*"
+            ],
+            "Accept-Encoding": [
+                "gzip, deflate"
+            ],
+            "cache-control": [
+                "no-cache"
+            ],
+            "CloudFront-Forwarded-Proto": [
+                "https"
+            ],
+            "CloudFront-Is-Desktop-Viewer": [
+                "true"
+            ],
+            "CloudFront-Is-Mobile-Viewer": [
+                "false"
+            ],
+            "CloudFront-Is-SmartTV-Viewer": [
+                "false"
+            ],
+            "CloudFront-Is-Tablet-Viewer": [
+                "false"
+            ],
+            "CloudFront-Viewer-Country": [
+                "IN"
+            ],
+            "Content-Type": [
+                "text/plain"
+            ],
+            "Host": [
+                "rd0a79ans4.execute-api.ap-south-1.amazonaws.com"
+            ],
+            "Postman-Token": [
+                "afbf7c95-b841-4df2-9010-272184295224"
+            ],
+            "User-Agent": [
+                "PostmanRuntime/7.6.0"
+            ],
+            "Via": [
+                "1.1 768fe349e14518bfffafb530144094da.cloudfront.net (CloudFront)"
+            ],
+            "X-Amz-Cf-Id": [
+                "ymLffIwl-EhzzF-bZH1deE1gZiMemh1_U2mL65n0WbMDc0WvxMYM8Q=="
+            ],
+            "X-Amzn-Trace-Id": [
+                "Root=1-5cca994c-e09b5d1c7144e5986b662f4d"
+            ],
+            "X-Forwarded-For": [
+                "144.36.235.110, 52.46.49.170"
+            ],
+            "X-Forwarded-Port": [
+                "443"
+            ],
+            "X-Forwarded-Proto": [
+                "https"
+            ]
+        },
+        "queryStringParameters": null,
+        "multiValueQueryStringParameters": null,
+        "pathParameters": {
+            "path": "profiles"
+        },
+        "stageVariables": null,
+        "requestContext": {
+            "resourceId": "7a6h3h",
+            "resourcePath": "/api/{path}",
+            "httpMethod": "POST",
+            "extendedRequestId": "ZCzkAENuhcwFTiw=",
+            "requestTime": "02/May/2019:07:16:28 +0000",
+            "path": "/dev/api/profiles",
+            "accountId": "555355347209",
+            "protocol": "HTTP/1.1",
+            "stage": "dev",
+            "domainPrefix": "rd0a79ans4",
+            "requestTimeEpoch": 1556781388817,
+            "requestId": "343cf192-6caa-11e9-a86b-3d7b98b7f5af",
+            "identity": {
+                "cognitoIdentityPoolId": null,
+                "accountId": null,
+                "cognitoIdentityId": null,
+                "caller": null,
+                "sourceIp": "144.36.235.110",
+                "accessKey": null,
+                "cognitoAuthenticationType": null,
+                "cognitoAuthenticationProvider": null,
+                "userArn": null,
+                "userAgent": "PostmanRuntime/7.6.0",
+                "user": null
+            },
+            "domainName": "rd0a79ans4.execute-api.ap-south-1.amazonaws.com",
+            "apiId": "rd0a79ans4"
+        },
+        "body": "{\n \"id\": \"toskumar\",\n \"version\":\"1\",\n \"name\":\"SenthilKumar\"\n}",
+        "isBase64Encoded": false
+    }
+}

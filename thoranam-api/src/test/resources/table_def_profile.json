@@ -1,0 +1,27 @@
+{
+	"TableName": "Profile",
+	"AttributeDefinitions": [
+		{
+			"AttributeName": "cid",
+			"AttributeType": "S"
+		},
+		{
+			"AttributeName": "uid",
+			"AttributeType": "S"
+		}
+	],
+	"KeySchema": [
+		{
+			"AttributeName": "cid",
+			"KeyType": "HASH"
+		},
+		{
+			"AttributeName": "uid",
+			"KeyType": "RANGE"
+		}
+	],
+	"ProvisionedThroughput": {
+		"ReadCapacityUnits": 1,
+		"WriteCapacityUnits": 1
+	}
+}

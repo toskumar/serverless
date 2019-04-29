@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "d1bcb68e-0174-4529-a33c-ecfdd7ceb639",
+		"name": "thoranam-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProfiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://rd0a79ans4.execute-api.ap-south-1.amazonaws.com/dev/api/profiles",
+					"protocol": "https",
+					"host": [
+						"rd0a79ans4",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"api",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProfiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"cid\": \"vaniyar\",\n \"uid\":\"kumar@yahoo.com\",\n \"createdOn\": 1546300800000,\n \"createdBy\": \"test-admin\"\n}"
+				},
+				"url": {
+					"raw": "https://rd0a79ans4.execute-api.ap-south-1.amazonaws.com/dev/api/profiles",
+					"protocol": "https",
+					"host": [
+						"rd0a79ans4",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"api",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProfileById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://rd0a79ans4.execute-api.ap-south-1.amazonaws.com/dev/api/profiles?cid=vaniyar&uid=kumar@yahoo.com",
+					"protocol": "https",
+					"host": [
+						"rd0a79ans4",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"api",
+						"profiles"
+					],
+					"query": [
+						{
+							"key": "cid",
+							"value": "vaniyar"
+						},
+						{
+							"key": "uid",
+							"value": "kumar@yahoo.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7438ebac-77b8-480f-a801-34ba2af549cf",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3b9fcd49-b3be-4e00-8392-4cae35f4fad0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

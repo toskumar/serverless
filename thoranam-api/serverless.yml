@@ -1,0 +1,81 @@
+# Welcome to Serverless!
+
+service: thoranam-api
+
+provider:
+  name: aws
+  runtime: java8
+  memorySize: 1024
+  timeout: 30
+
+# you can overwrite defaults here
+  stage: dev
+  region: ap-south-1
+
+# Lambda function's IAM Role here
+iamRoleStatements:
+   - Effect: "Allow"
+     Action:
+       - "dynamodb:*"
+     Resource: "arn:aws:dynamodb:ap-south-1:*"
+     
+# define service wide environment variables here
+environment:
+   app: thoranam
+
+# you can add packaging information here
+package:
+  artifact: target/thoranam-api-dev.jar
+
+functions:
+  create:
+    handler: com.traits.serverless.fn.CreateEventHandler
+    events:
+     - http:
+        path: /api/{path}
+        method: post
+  read:
+    handler: com.traits.serverless.fn.ReadEventHandler
+    events:
+     - http:
+        path: /api/{path}
+        method: get
+  update:
+    handler: com.traits.serverless.fn.UpdateEventHandler
+    events:
+     - http:
+        path: /api/{path}
+        method: put        
+resources:
+  Resources:
+    ProfileTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: Profile
+        AttributeDefinitions:
+          - AttributeName: cid
+            AttributeType: S
+          - AttributeName: uid
+            AttributeType: S
+        KeySchema:
+          - AttributeName: cid
+            KeyType: HASH
+          - AttributeName: uid
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    UserTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: User
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1          
+          
